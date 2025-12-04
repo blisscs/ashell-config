@@ -1,46 +1,17 @@
-# Ashell Configuration - US-001 Implementation
-# Minimal, clean status bar with essential widgets
-
 # Basic settings
-log_level = "warn"           # Minimal logging for clean output
-outputs = "All"              # Display on all monitors
-position = "Top"             # Position bar at top of screen
+log_level = "warn"
+outputs = "All"
+position = "Top"
 
-# Module layout: Left[Workspaces] Center[WindowTitle] Right[Keyboard, Clock, Tray]
-[modules]
-left = ["workspaces"]
-center = ["window_title"]
-right = ["keyboard", "clock", "tray"]
-
-# Appearance settings - minimal and theme-friendly
+# Appearance settings
 [appearance]
-# Use neutral colors that work well with most themes
-background = "#00000000"     # Transparent background
-foreground = "#ffffff"       # White text for good contrast
-border_color = "#00000000"   # No border for minimal look
-border_width = 0             # No border
+background = "#24273a"
+foreground = "#cad3f5"
+border_color = "#8892f0"
+border_width = 1
+style = "Solid"
 
-# Module-specific settings
-[settings]
-# Workspaces widget - shows active and available workspaces
-[settings.workspaces]
-format = "{name}"            # Simple workspace name display
-active_format = "<b>{name}</b>"  # Bold for active workspace
-
-# Window Title widget - shows focused window title
-[settings.window_title]
-max_length = 50              # Limit title length to prevent overflow
-ellipsis = "..."              # Show ellipsis for long titles
-
-# Clock widget - displays current time
-[settings.clock]
-format = "%H:%M"             # 24-hour format for minimal display
-date_format = "%Y-%m-%d"     # Optional date display
-
-# Keyboard Language widget - shows current keyboard layout
-[settings.keyboard]
-format = "{layout}"          # Show keyboard layout name
-
-# System Tray - shows system icons and notifications
-[settings.tray]
-icon_size = 16               # Small icons for minimal appearance
+# Module layout
+[modules]
+left = ["Workspaces"]
+right = ["Clock", "KeyboardLayout", "SystemInfo", "Privacy", "Settings"]
