@@ -23,7 +23,25 @@ This project provides centralized ashell configuration files that users can syml
 ## Configuration Structure
 
 - `configs/` - Ashell configuration files
-  - `config.toml` - Default ashell configuration file (empty base to customize)
+  - `config.toml` - Default ashell configuration file with minimal widget setup
+
+### Default Configuration (config.toml)
+
+The default configuration implements a minimal but functional status bar with:
+
+**Layout:**
+- **Left**: Workspaces widget - shows active and available workspaces
+- **Center**: Window Title widget - displays focused window title
+- **Right**: Keyboard Language, Clock, and System Tray widgets
+
+**Features:**
+- Clean, minimal appearance with transparent background
+- Positioned at the top of the screen
+- Displays on all monitors
+- Theme-friendly neutral colors
+- Proper widget spacing and alignment
+- 24-hour clock format
+- Truncated window titles to prevent overflow
 
 ## Usage
 
