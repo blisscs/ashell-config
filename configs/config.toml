@@ -1,11 +1,17 @@
-# Empty Ashell Configuration
-# Base configuration file - start with minimal settings and add what you need
-
+# Basic settings
 log_level = "warn"
 outputs = "All"
 position = "Top"
 
+# Appearance settings
+[appearance]
+background = "#24273a"
+foreground = "#cad3f5"
+border_color = "#8892f0"
+border_width = 1
+style = "Solid"
+
+# Module layout
 [modules]
-left = []
-center = []
-right = []
+left = ["Workspaces"]
+right = ["Clock", "KeyboardLayout", "SystemInfo", "Privacy", "Settings"]

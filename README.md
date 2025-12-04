@@ -23,7 +23,25 @@ This project provides centralized ashell configuration files that users can syml
 ## Configuration Structure
 
 - `configs/` - Ashell configuration files
-  - `config.toml` - Default ashell configuration file (empty base to customize)
+  - `config.toml` - Default ashell configuration file with minimal widget setup
+
+### Default Configuration (config.toml)
+
+The default configuration implements a minimal but functional status bar with:
+
+**Layout:**
+- **Left**: Workspaces widget - shows active and available workspaces
+- **Right**: Clock, Keyboard Layout, System Info, Privacy, and Settings widgets
+
+**Features:**
+- Solid background style with Hyprland theme-matching colors
+- Positioned at the top of the screen
+- Displays on all monitors
+- Full-width bar appearance
+- Real-time system information (CPU, memory usage)
+- Keyboard layout indicator for multilingual setups
+- Privacy controls (microphone/camera toggles)
+- Settings menu with power management and system controls
 
 ## Usage
 
