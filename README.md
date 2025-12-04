@@ -31,17 +31,17 @@ The default configuration implements a minimal but functional status bar with:
 
 **Layout:**
 - **Left**: Workspaces widget - shows active and available workspaces
-- **Center**: Window Title widget - displays focused window title
-- **Right**: Keyboard Language, Clock, and System Tray widgets
+- **Right**: Clock, Keyboard Layout, System Info, Privacy, and Settings widgets
 
 **Features:**
-- Clean, minimal appearance with transparent background
+- Solid background style with Hyprland theme-matching colors
 - Positioned at the top of the screen
 - Displays on all monitors
-- Theme-friendly neutral colors
-- Proper widget spacing and alignment
-- 24-hour clock format
-- Truncated window titles to prevent overflow
+- Full-width bar appearance
+- Real-time system information (CPU, memory usage)
+- Keyboard layout indicator for multilingual setups
+- Privacy controls (microphone/camera toggles)
+- Settings menu with power management and system controls
 
 ## Usage
 
