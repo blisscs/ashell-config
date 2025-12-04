@@ -1,0 +1,11 @@
+# Empty Ashell Configuration
+# Base configuration file - start with minimal settings and add what you need
+
+log_level = "warn"
+outputs = "All"
+position = "Top"
+
+[modules]
+left = []
+center = []
+right = []
