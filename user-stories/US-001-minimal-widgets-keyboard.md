@@ -64,12 +64,12 @@ Right: [Keyboard, Clock, Tray]
 - Keyboard layout detection
 
 ## Definition of Done
-- [ ] All required widgets are configured and functional
-- [ ] Keyboard language display shows current layout correctly
-- [ ] Configuration follows ashell TOML format
-- [ ] README.md is updated with new configuration details
-- [ ] Configuration is tested and working
-- [ ] User can successfully symlink and use the configuration
+- [x] All required widgets are configured and functional
+- [x] Keyboard language display shows current layout correctly
+- [x] Configuration follows ashell TOML format
+- [x] README.md is updated with new configuration details
+- [x] Configuration is tested and working
+- [x] User can successfully symlink and use the configuration
 
 ## Additional Notes
 - This configuration should serve as a good starting point for users
