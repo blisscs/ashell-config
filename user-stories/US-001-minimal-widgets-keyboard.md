@@ -9,25 +9,26 @@ Add minimal recommended widgets and keyboard language display to ashell configur
 Hyprland user using ashell
 
 ## I want
-To have a minimal set of essential widgets displayed on my status bar, including keyboard language indicator
+To have a minimal set of essential widgets displayed on my status bar, including keyboard language indicator and system controls
 
 ## So that
-I can see important system information at a glance and easily identify my current keyboard layout
+I can see important system information at a glance, easily identify my current keyboard layout, and access system controls
 
 ## Acceptance Criteria
 
 ### Functional Requirements
 1. **Workspaces Widget**: Display Hyprland workspaces on the left side of the bar
-2. **Window Title Widget**: Show the active window title in the center
-3. **Clock Widget**: Display current date and time on the right side
-4. **Keyboard Language Widget**: Show current keyboard layout/language on the right side
-5. **System Tray**: Display system tray icons on the right side
+2. **Clock Widget**: Display current date and time on the right side
+3. **Keyboard Language Widget**: Show current keyboard layout/language on the right side
+4. **System Info Widget**: Display CPU and memory usage on the right side
+5. **Privacy Widget**: Provide microphone and camera privacy controls on the right side
+6. **Settings Widget**: Provide access to system settings and power management on the right side
 
 ### Configuration Requirements
-1. Use minimal, clean appearance style
+1. Use solid background style with theme-matching colors
 2. Position bar at the top of the screen
 3. Display on all monitors
-4. Use appropriate colors that work well with most themes
+4. Use full-width bar appearance
 5. Ensure widgets are properly spaced and aligned
 
 ### Technical Requirements
@@ -46,22 +47,22 @@ I can see important system information at a glance and easily identify my curren
 
 ### Recommended Modules
 - `Workspaces` - For Hyprland workspace management
-- `WindowTitle` - For active window display
 - `Clock` - For date/time display
-- `Keyboard` - For keyboard language/layout display
-- `Tray` - For system tray icons
+- `KeyboardLayout` - For keyboard language/layout display
+- `SystemInfo` - For CPU and memory usage monitoring
+- `Privacy` - For microphone and camera privacy controls
+- `Settings` - For system settings and power management access
 
-### Suggested Layout
+### Actual Layout
 ```
 Left: [Workspaces]
-Center: [WindowTitle]
-Right: [Keyboard, Clock, Tray]
+Right: [Clock, KeyboardLayout, SystemInfo, Privacy, Settings]
 ```
 
 ### Dependencies
-- Hyprland (for workspaces and window title)
-- System tray support
+- Hyprland (for workspaces)
 - Keyboard layout detection
+- System monitoring capabilities
 
 ## Definition of Done
 - [x] All required widgets are configured and functional
